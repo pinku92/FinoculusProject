@@ -1,0 +1,47 @@
+package com.niit.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Transient;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
+public class TextFile {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int FileId;
+	
+	private String text;
+	
+	private String text_reverse;
+
+	public int getFileId() {
+		return FileId;
+	}
+
+	public void setFileId(int fileId) {
+		FileId = fileId;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public String getText_reverse() {
+		return text_reverse;
+	}
+
+	public void setText_reverse(String text_reverse) {
+		this.text_reverse = text_reverse;
+	}
+
+}

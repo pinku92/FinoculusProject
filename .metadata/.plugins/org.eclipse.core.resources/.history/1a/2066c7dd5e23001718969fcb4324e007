@@ -1,0 +1,13 @@
+package com.niit.dao.impl;
+
+import com.niit.dao.TextFileDAO;
+import com.niit.model.TextFile;
+
+public class TextFileDAOImpl implements TextFileDAO {
+
+	public void save(TextFile textFile) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

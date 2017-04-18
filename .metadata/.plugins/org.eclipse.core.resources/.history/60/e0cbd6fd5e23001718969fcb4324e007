@@ -1,0 +1,24 @@
+package com.niit.dao.impl;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.niit.dao.TextFileDAO;
+import com.niit.model.TextFile;
+
+public class TextFileDAOImpl implements TextFileDAO {
+	
+	@Autowired
+    private SessionFactory sessionFactory;
+	
+	public TextFileDAOImpl(SessionFactory sessionFactory)
+	{
+		this.sessionFactory=sessionFactory;
+	}
+
+	public void save(TextFile textFile) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
